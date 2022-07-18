@@ -10,6 +10,9 @@ call plug#begin()
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
 call plug#end()
 
 "treesitter
@@ -23,4 +26,11 @@ require'nvim-treesitter.configs'.setup {
         enable = true,
     },
 }
+EOF
+
+"nvim-tree
+lua<<EOF
+require("nvim-tree").setup({
+
+})
 EOF
