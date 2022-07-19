@@ -20,6 +20,8 @@ Plug 'windwp/nvim-autopairs'
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 
 Plug 'Mofiqul/dracula.nvim'
+
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 "treesitter
@@ -77,5 +79,6 @@ require'toggleterm'.setup {
     open_mapping = [[<c-t>]],
     direction = 'float',
 } 
+require'lspconfig'.pyright.setup{}
 EOF
 
